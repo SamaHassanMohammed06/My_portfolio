@@ -4,93 +4,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="assets/CSS/style.css">
-    <title>Portfolio</title>
 </head>
 
 <body>
-    <div class="page">
-        <h1 id="title"></h1>
-        <div id="container">
-            <div class='content'>
-                <h2>About Me</h2>
-                <h3>I am Sama Hassan</h3>
-                <p> I’m a <Strong>front-end developer</strong> (React.js).</p>
-                <p> I have a strong foundation in building web applications and a keen eye for detail.</p>
-                <p> I’m always looking for opportunities to apply my skills to real-world projects.</p>
-            </div>
-            <div class='image'><img src="../assets/images/IMG-20251127-WA0042.jpg.jpeg"></div>
-            <div class='content'>
-                <h2>Education and Training</h2>
-                <p>I am currently pursuing my Bachelor’s degree at <strong>Ain Shams University</strong>,
-                    specifically within the Faculty of <strong>Computer and Information Sciences</strong>.
-                </p>
-                <p>A participant in <strong> Digital Egypt Pioneers Initiative (DEPI)</strong> Front-end Development
-                    Trainee.
-                </p>
-            </div>
-            <div class='image'><img src="../assets/images/Ain shams university.jpg"></div>
-            <div class="experience-wrapper">
-                 <h2>Experience and Projects</h2>
-                <p class="intro-text">
-                    I offer customized systems tailored to your needs, featuring a clean UI for smooth management and a
-                    paperless workflow all, while keeping your data secure.
-                </p>
-                <div class="experience-tree">
-
-                    <div class="tree-item">
-                        <span class="item-number">1</span>
-                        <p class="item-text"> Data Structures, Algorithms, OOP (Object-Oriented Programming) &
-                            Problem Solving.</p>
-                    </div>
-                    <div class="tree-item">
-                        <span class="item-number">2</span>
-                        <p class="item-text">HTML5 and CSS3.</p>
-                    </div>
-                    <div class="tree-item">
-                        <span class="item-number">3</span>
-                        <p class="item-text">JavaScript (ES6+) and interactive interfaces.</p>
-                    </div>
-                    <div class="tree-item">
-                        <span class="item-number">4</span>
-                        <div class="item-content">
-                            <p class="item-text">Projects:
-                            </p>
-                            <ul class="projects-sub-list">
-                                <li><strong>Il Cielo:</strong>
-                                    <a href="https://samahassanmohammed06.github.io/-pink-market-task/html/index.html"
-                                        target="_blank" class="project-link">View Project</a>
-                                </li>
-                                <li><strong>Portfolio:</strong>
-                                    <a href="" target="_blank" class="project-link">View Project</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+    <nav>
+        <div id="logo"><img src="assets/images/Untitled design (1).png" alt="logo"></div>
+        <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#ed-tr">Education and Training</a></li>
+            <li><a href="#exp">Experience</a></li>
+            <li><a href="#proj">Projects</a></li>
+            <li><a href="#contact">Get in Touch</a></li>
+        </ul>
+    </nav>
+    <div class="hero-section">
+        <div id="about-me">
+            <div class="txt">
+                <h1>Hello, I'm <span>Sama Hassan</span></h1>
+                <p>I'm a passionate developer focused on building clean, responsive, and user-friendly websites.</p>
+                <p>I love turning complex problems into beautiful digital experiences using modern web technologies.</p>
+                <div class="cv-btn">
+                    <a href="assets/PDF/CV_sama_hassan.pdf" download="Sama_Hassan_CV">
+                        <button>Download CV</button>
+                    </a>
                 </div>
-                <br>
-                <div class='content contact-section'>
-                    
-                    <h2>Let's Create Something Together!</h2>
-                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your
-                        visions.</p>
-
-                    <ul class="contact-list">
-                        <li><strong>Email:</strong> <a
-                                href="mailto:your-email@example.com">samahassanmohamed12@email.com</a></li>
-                        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sama-hassan-82534b378"
-                                target="_blank">linkedin.com/in/sama-hassan</a></li>
-                        <li><strong>GitHub:</strong> <a href="https://github.com/SamaHassanMohammed06"
-                                target="_blank">github.com/sama-hassan</a></li>
-                    </ul>
-
-                    <div class="more-info">
-                        <span>Phone Number: +201096363631 </span>
-                        <span>| Located in: El Obour, Egypt</span>
-                    </div>
-                </div>
+            </div>
+            <div class="my-img">
+                <img src="assets/images/IMG_20250801_172051.jpg" alt="Sama-img">
             </div>
         </div>
+    </div>
+    <div class="hero-section">
+        <div id="ed-tr">
+            <div class="ed">
+                <h3>Faculty of Computer and Information Sciences (CIS)</h3>
+                <ul>
+                    <li>Ain Shams University.</li>
+                    <li>Strong Technical Foundation.</li>
+                </ul>
+            </div>
+            <div class="tr">
+                <h3>Digital Egypt Pioneers Initiative (DEPI)</h3>
+                <ul>
+                    <li>Front-End Development Trainee.</li>
+                    <li>Professional training in building modern web interfaces.</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="hero-section">
+        <div id="exp">
+            <div class="skills">
+                <h4>CS Fundamentals:</h4>
+                <p>Strong foundation in <b>Algorithms, Data Structures, and OOP</b> to write clean, logical, and
+                    efficient code.</p>
+
+            </div>
+            <div class="skills">
+                <h4>Modern UI/UX:</h4>
+                <p>Crafting responsive and semantic interfaces using<b> HTML5 and CSS3</b> for a seamless user
+                    experience.</p>
+
+            </div>
+            <div class="skills">
+                <h4>Dynamic Logic:</h4>
+                <p>Developing interactive web applications with <b>JavaScript (ES6+)</b> and modern development
+                    workflows.</p>
+            </div>
+        </div>
+    </div>
+    <div class="hero-section">
+        <div id="proj">
+            <ul>
+                <li>
+                    <div class="project-info">
+                        <h3>Personal Portfolio</h3>
+                        <p>A responsive personal website built to showcase my journey as a developer. Featuring custom
+                            CSS animations and modern layouts using HTML5, CSS3 and JS (ES6+).</p>
+                        <a href="https://samahassanmohammed06.github.io/My_portfolio" target="_blank">Show Project</a>
+                    </div>
+                </li>
+                <br>
+                <hr>
+                <li>
+                    <div class="project-info">
+                        <h3>Il Cielo - Furniture E-commerce</h3>
+                        <p>
+                            Served as <b>Team Leader</b> for this web application. I developed a <b>Responsive
+                                Design</b> and implemented the logic for <b>Login/Logout</b> and the <b>Shopping
+                                Cart</b> using <b>JSON files</b> to manage dynamic data and mimic backend functionality.
+                        </p>
+                        <a href="https://samahassanmohammed06.github.io/-pink-market-task/html/index.html"
+                            target="_blank">Show Project</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="contact-heading">
+        <h2>Let's Create Something Together!</h2>
+        <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your
+            visions.</p>
+    </div>
+    <div class="hero-section">
+        <div id="contact">
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:your-email@example.com">samahassanmohamed12@email.com</a>
+                </li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sama-hassan-82534b378"
+                        target="_blank">linkedin.com/in/sama-hassan</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/SamaHassanMohammed06"
+                        target="_blank">github.com/sama-hassan</a></li>
+            </ul>
+            <p>Phone Number: +201096363631 | Located in: El Obour, Egypt</p>
+        </div>
+    </div>
+    <script src="assets/JS/main.js"></script>
+
 </body>
 
 </html>
