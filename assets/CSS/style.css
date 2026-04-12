@@ -3,12 +3,23 @@
        font-family: Arial, Helvetica, sans-serif;
    }
 
+   html {
+       scroll-behavior: smooth;
+   }
+
    body {
        background: linear-gradient(50deg, #6e85bb 0%, #517cc1 50%, #3b5475 100%);
        color: rgb(29, 29, 70);
        font-size: 1.1em;
    }
 
+   #about-me,
+   #ed-tr,
+   #exp,
+   #proj,
+   #contact {
+       scroll-margin-top: 150px;
+   }
 
    nav {
        position: sticky;
@@ -121,7 +132,7 @@
    }
 
    #about-me .txt .cv-btn button:hover {
-      transform: scale(1.1);
+       transform: scale(1.1);
 
    }
 
