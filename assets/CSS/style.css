@@ -1,3 +1,29 @@
+   :root {
+       --bg-gradient: linear-gradient(50deg, #6e85bb 0%, #517cc1 50%, #3b5475 100%);
+       --hero-sec-nav-color: linear-gradient(50deg, #94a0bb 0%, #eef5fe 50%, #c2d6f0 100%);
+       --text-color: rgb(29, 29, 70);
+       --bg-skills: linear-gradient(50deg, #e5eaf8 0%, #94c0f8 50%, #d4e7ff 100%);
+       --proj-show: #3b5475;
+       --cv-btn: linear-gradient(50deg, #8996b3 0%, #e5edfc 50%, #92c1ff 100%);
+       --theme-btn: rgb(26, 26, 67);
+       --contact-links: #3b5475;
+       --scrolled-nav-bg: rgb(27, 27, 83);
+       --show-proj-txt: aliceblue;
+   }
+
+   .dark {
+       --bg-gradient: linear-gradient(50deg, #08080f 0%, #181b23 50%, #07192e 100%);
+       --hero-sec-nav-color: linear-gradient(50deg, #0b1c43 0%, #4f83c7 50%, #1b2430 100%);
+       --text-color: #e5f0fa;
+       --bg-skills: linear-gradient(50deg, #061642 0%, #4e5f75 50%, #6d87a6 100%);
+       --proj-show: #73a3e1;
+       --cv-btn: linear-gradient(50deg, #0b1e46 0%, #2e3c5b 50%, #445c7b 100%);
+       --theme-btn: rgb(193, 193, 255);
+       --contact-links: rgb(255, 255, 255);
+       --scrolled-nav-bg: rgb(19, 19, 44);
+       --show-proj-txt: rgb(29, 29, 70);
+   }
+
    * {
        box-sizing: border-box;
        font-family: Arial, Helvetica, sans-serif;
@@ -8,8 +34,8 @@
    }
 
    body {
-       background: linear-gradient(50deg, #6e85bb 0%, #517cc1 50%, #3b5475 100%);
-       color: rgb(29, 29, 70);
+       background: var(--bg-gradient);
+       color: var(--text-color);
        font-size: 1.1em;
    }
 
@@ -31,7 +57,7 @@
 
    nav,
    .hero-section {
-       background: linear-gradient(50deg, #94a0bb 0%, #eef5fe 50%, #c2d6f0 100%);
+       background: var(--hero-sec-nav-color);
        border-radius: 10px;
        display: flex;
        align-items: center;
@@ -93,7 +119,7 @@
    }
 
    .scrolled {
-       background: rgb(29, 29, 70);
+       background: var(--scrolled-nav-bg);
        color: rgb(229, 240, 250);
    }
 
@@ -113,7 +139,7 @@
        max-width: 250px;
        height: auto;
        border-radius: 10px;
-       box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.2);
+       box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.3);
    }
 
    #about-me .txt .cv-btn {
@@ -126,9 +152,10 @@
        cursor: pointer;
        border-radius: 50px;
        padding: 20px;
-       background: linear-gradient(50deg, #8996b3 0%, #e5edfc 50%, #92c1ff 100%);
+       background: var(--cv-btn);
        transition: all 0.3s ease-in-out;
        font-weight: bold;
+       color: var(--text-color);
    }
 
    #about-me .txt .cv-btn button:hover {
@@ -159,9 +186,9 @@
    }
 
    .skills {
-       background: linear-gradient(50deg, #e5eaf8 0%, #94c0f8 50%, #d4e7ff 100%);
+       background: var(--bg-skills);
        border: solid 2px #3b5475;
-       color: rgb(29, 29, 70);
+       color: var(--text-color);
        border-radius: 10px;
        text-align: center;
        opacity: 0;
@@ -219,8 +246,8 @@
        padding: 5px;
        border: solid 2px rgb(29, 59, 111);
        border-radius: 25px;
-       background-color: #3b5475;
-       color: aliceblue;
+       background-color: var(--proj-show);
+       color: var(--show-proj-txt);
        cursor: pointer;
        text-decoration: none;
    }
@@ -255,7 +282,7 @@
 
    #contact li a {
        text-decoration: none;
-       color: #3b5475;
+       color: var(--contact-links);
    }
 
    @keyframes pump {
@@ -273,6 +300,23 @@
    }
 
    /* hero section contact */
+   .mode {
+       position: sticky;
+       bottom: 20px;
+       z-index: 2000;
+       display: flex;
+       justify-content: flex-end;
+
+   }
+
+   .mode button {
+       background-color: var(--theme-btn);
+       aspect-ratio: 1 / 1;
+       border-radius: 50%;
+       border: solid 2px rgb(220, 251, 255);
+       padding: 10px;
+       cursor: pointer;
+   }
 
    /*  TABLET */
    @media (min-width: 769px) and (max-width: 1024px) {
